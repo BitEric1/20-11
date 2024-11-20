@@ -118,7 +118,7 @@ function debounce(func, wait, immediate) {
 };
 
 /*MUSIC PLAYER*/
-var playingSong = "audio/first_date.mp3";
+var playingSong = "audio/NhuNgayHomQuaUpgrade-SonTungMTP-4282962.mp3";
 var barFill = document.getElementById("fill");
 var song = new Audio();
 
@@ -162,4 +162,5 @@ lookback.addEventListener('click', () => {
 document.querySelector('.overlay').addEventListener('click', () => {
     document.querySelector('.overlay').style.display = 'none';
     document.querySelector('.video').style.display = 'none';
+    document.querySelector('.video > video').pause();
 })
