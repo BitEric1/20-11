@@ -150,3 +150,16 @@ song.addEventListener('timeupdate', function() {
         play_btn.innerHTML = "&#9658;";
     }
 });
+
+const lookback = document.getElementById('lookback');
+lookback.addEventListener('click', () => {
+    document.querySelector('.overlay').style.display = 'block';
+    document.querySelector('.video').style.display = 'block';
+    document.querySelector('.video > video').autoplay = true;
+    document.querySelector('.video > video').play();
+});
+
+document.querySelector('.overlay').addEventListener('click', () => {
+    document.querySelector('.overlay').style.display = 'none';
+    document.querySelector('.video').style.display = 'none';
+})
